@@ -11,6 +11,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { CourseComponent } from './components/course/course.component';
+import { AdminComponent } from './components/admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CourseComponent } from './components/course/course.component';
     ProfileComponent,
     PageNotFoundComponent,
     SideBarComponent,
-    CourseComponent
+    CourseComponent,
+    AdminComponent
   ],
     imports: [
         BrowserModule,

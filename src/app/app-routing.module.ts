@@ -5,11 +5,13 @@ import {CourseDetailComponent} from "./components/course-detail/course-detail.co
 import {ProfileComponent} from "./components/profile/profile.component";
 import {PageNotFoundComponent} from "./components/page-not-found/page-not-found.component";
 import {CourseComponent} from "./components/course/course.component";
+import {AdminComponent} from "./components/admin/admin.component";
 
 const routes: Routes = [
   {path: '', redirectTo: "courses", pathMatch: 'full'},
   {path: 'login', component: LoginComponent},
   {path: 'courses', component: CourseDetailComponent},
+  {path: 'admin', component: AdminComponent},
   {path: 'profile', component: ProfileComponent},
   {path: 'course/:id', component: CourseComponent},
   {path: '**', pathMatch: "full", component: PageNotFoundComponent}
