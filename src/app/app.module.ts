@@ -12,6 +12,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { CourseComponent } from './components/course/course.component';
 import { AdminComponent } from './components/admin/admin.component';
+import {AngularEditorModule} from "@kolkov/angular-editor";
+import {provideHttpClient} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -28,9 +30,10 @@ import { AdminComponent } from './components/admin/admin.component';
         BrowserModule,
         AppRoutingModule,
         FormsModule,
-        NgOptimizedImage
+        NgOptimizedImage,
+        AngularEditorModule,
     ],
-  providers: [],
+  providers: [provideHttpClient()],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
