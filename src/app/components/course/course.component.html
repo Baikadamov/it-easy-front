@@ -65,11 +65,10 @@
         <div class="hidden " id="course" role="tabpanel" aria-labelledby="course-tab">
           <div class="rounded-lg p-4  bg-gray-50 dark:bg-gray-800">
             <p class="text-base text-gray-500 dark:text-gray-400">
-              Добро пожаловать на курс <b>"Основы веб-разработки" </b> ! Этот курс предназначен для тех, кто хочет
-              начать
-              карьеру в
-              области веб-разработки или получить базовые знания для создания собственных веб-сайтов и приложений. Мы
-              охватим все ключевые технологии, необходимые для создания современных и функциональных веб-страниц.
+            <span *ngFor="let course of course; let i = index">
+              <div >{{ course.title }}</div>
+              <div >{{ course.description }}</div>
+            </span>
             </p>
             <div class="text-base text-gray-500 dark:text-gray-400 mt-4">
               <b> Преимущества курса</b>
